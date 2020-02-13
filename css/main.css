@@ -1,0 +1,71 @@
+body {
+    background-color: rgb(28, 76, 114);
+    font-family: "나눔고딕", NanumGothic, Dotum, "돋움", sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+}
+[draggable] {
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    -khtml-user-drag: element;
+    -webkit-user-drag: element;
+}
+
+#columns {
+    list-style-type: none;
+}
+
+.contentWrap {
+    width: 350px;
+    background-color: rgb(147, 255, 250);
+    margin: 10px auto;
+    padding: 0 10px;
+    border: 1px solid rgb(0, 0, 0);
+}
+.column {
+    width: 350px;
+    height: 120px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    text-align: center;
+    cursor: move;
+    margin: 10px auto 0;
+    border: 1px solid #000000;
+    background-color: white;
+}
+.column:last-child{
+    margin-bottom: 10px;
+}
+.column > div {
+    display: inline-block;
+    vertical-align: inherit;
+    line-height: 60px;
+}
+
+.content__profile > img {
+    vertical-align: middle;
+    width: 70px;
+    height: 100px;
+    border-radius: 50%;
+    background-size: auto
+}
+.content__passage {
+    margin: 0 5px;
+}
+.content__comment {
+    font-weight: bold;
+    width: 260px;
+    line-height: 22px;
+}
+
+.author__fromto {
+    float: left;
+    padding-left: 5px;
+
+}
+.author__name {
+    float: right;
+    padding-right: 20px;
+}
